@@ -26,13 +26,11 @@ const Contacto = () => {
 
   const enviar = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Guardamos en localStorage
     const usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
     usuarios.push(form);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-    navigate("/mostrar"); // vamos a la página de usuarios
+    navigate("/mostrar");
   };
 
 

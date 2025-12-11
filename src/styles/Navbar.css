@@ -8,9 +8,6 @@
   color: #fff;
 }
 
-
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -42,7 +39,6 @@
   gap: 10px;
 }
 
-/* RESPONSIVE */
 #menu-toggle {
   display: none;
 }
@@ -55,14 +51,14 @@
 
 .hamburger-btn {
         display: flex;
-        background: black;          /* ← AQUÍ CAMBIAS EL FONDO */
-        color: white;               /* ← COLOR DEL ICONO */
-        border-radius: 50%;         /* ← CÍRCULO */
+        background: black;          
+        color: white;               
+        border-radius: 50%;         
         width: 50px;
-        height: 50px;               /* ← IMPORTANTE */
+        height: 50px;               
         align-items: center;
         justify-content: center;
-        border: 2px solid white;    /* borde del círculo */
+        border: 2px solid white;    
         font-size: 28px;
     }
     .search-container {
@@ -102,11 +98,11 @@
         }
         .hamburger-btn {
              display: flex;
-        background: rgb(108, 36, 36); /* COLOR QUE QUIERES */
-        color: white;                 /* Icono blanco */
+        background: rgb(108, 36, 36); 
+        color: white;                 
         border-radius: 50%;
         width: 50px;
-        height: 50px;                 /* MUY IMPORTANTE */
+        height: 50px;               
         font-size: 28px;
         border: 2px solid #fff;
         align-items: center;
@@ -116,7 +112,7 @@
         .hamburger-btn:hover {
             background: #adf200;
         }
-         /* Ocultar menú normal en móvil */
+         
         .menu-derecha {
             display: none;
             position: absolute;

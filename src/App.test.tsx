@@ -13,7 +13,7 @@ const App: React.FC = () => {
   const { idioma } = useContext(LanguageContext);
 
   useEffect(() => {
-    document.documentElement.lang = idioma; // Cambia el lang dinámicamente
+    document.documentElement.lang = idioma; 
   }, [idioma]);
 
   return (

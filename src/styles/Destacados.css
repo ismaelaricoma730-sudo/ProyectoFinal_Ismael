@@ -1,29 +1,26 @@
-
-
-/* Contenedor principales productos destacados */
 .pagina-destacados {
   padding: 20px;
 }
 
-/* Título de la sección */
+
 .titulo-destacados {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.6;
   color: #000000;
-  text-align: left; /* Mantener centrado sobre la imagen y productos */
+  text-align: left; 
 }
 
-/* Contenedor principal de destacados */
+
 .destacados-contenedor {
   display: flex;
   gap: 30px;
-  align-items: flex-start; /* Alinea la parte superior de la imagen y productos */
+  align-items: flex-start; 
   flex-wrap: wrap;
 }
 
-/* Imagen grande a la izquierda */
+
 .imagen-destacados {
   flex-shrink: 0;
   max-width: 320px;
@@ -39,15 +36,14 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Productos a la derecha de la imagen grande */
 .productos-seccion {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  flex: 1; /* Ocupa el espacio restante junto a la imagen */
+  flex: 1;
 }
 
-/* Filtros */
+
 .destacados-filtros {
   margin-bottom: 20px;
 }
@@ -57,12 +53,12 @@
   border-radius: 4px;
 }
 
-/* Grid de productos */
+
 .grid-destacados {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start; /* Alinea productos a la izquierda dentro del contenedor */
+  justify-content: flex-start; 
 }
 
 .producto-destacado-item {
@@ -70,10 +66,10 @@
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  width: 200px !important; /* Ajustado para caber al lado de la imagen */
+  width: 200px !important; 
   box-sizing: border-box;
   text-align: center;
-  position: relative; /* Para badges */
+  position: relative; 
 }
 
 .producto-img {
@@ -101,7 +97,7 @@
   color: #777;
 }
 
-/* Badges */
+
 .destacado-badge {
   background-color: #3f670f;
   color: white;
@@ -124,7 +120,7 @@
   border-radius: 3px;
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
   .destacados-contenedor {
     flex-direction: column;

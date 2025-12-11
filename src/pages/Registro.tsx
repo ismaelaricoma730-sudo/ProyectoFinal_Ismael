@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/Registro.css";
 
-
-// Definimos la interfaz para tipar los datos
 interface Usuario {
   nombre: string;
   telefono: string;
@@ -17,7 +15,6 @@ const Registro = () => {
   const [usuarios, setUsuarios] = useState<Usuario[]>([]);
 
   useEffect(() => {
-    // Obtenemos los usuarios guardados en localStorage
     const data: Usuario[] = JSON.parse(localStorage.getItem("usuarios") || "[]");
     setUsuarios(data);
   }, []);
@@ -41,12 +38,7 @@ const Registro = () => {
           </div>
         ))
       )}
-   
-     
-  
     </div>
-   
-  
   );
 };
 

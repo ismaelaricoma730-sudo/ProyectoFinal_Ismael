@@ -1,4 +1,4 @@
-  /* ==== FOOTER ==== */
+
     footer{background-color:#333;color:white;padding:40px 0 20px;margin-top:40px;}
     .footer-content{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-bottom:30px;padding:0 20px;max-width:1200px;margin-left:auto;margin-right:auto;}
     .footer-section h3{margin-bottom:15px;color:#f0efeb;font-size:18px;}

@@ -1,18 +1,18 @@
-/* ================= COLUMNA IZQUIERDA: TODO el contenido ================= */
+
 .contenido-izquierdo {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* ================= TÍTULO ================= */
+
 .contenido-izquierdo h1 {
   font-size: 32px;
   margin-bottom: 15px;
   color: #333;
 }
 
-/* ================= TEXTO INTRODUCTORIO ================= */
+
 .texto-intro {
   margin-bottom: 30px;
   line-height: 1.6;
@@ -20,18 +20,18 @@
   font-size: 16px;
 }
 
-/* ================= FILA FORMULARIO + IMAGEN ================= */
+
 .fila-formulario-imagen {
   display: flex;
   gap: 30px;
-  align-items: flex-start; /* alinea la parte superior del formulario e imagen */
+  align-items: flex-start; 
   margin-bottom: 30px;
 }
 
-/* ================= IMAGEN DERECHA ================= */
+
 .imagen-derecha {
-  flex-shrink: 0; /* que no se reduzca */
-  max-width: 300px; /* ajusta según el diseño */
+  flex-shrink: 0; 
+  max-width: 300px; 
 }
 
 .imagen-derecha img {
@@ -41,16 +41,16 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ================= FORMULARIO ================= */
+
 .formulario-contacto {
   flex: 1;
 }
 .titulo-form {
-  text-align: center; /* centra el contenido */
-  font-size: 20px; /* tamaño del título */
+  text-align: center;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px; /* separa del primer campo del formulario */
-  color: #333; /* color del título */
+  margin-bottom: 20px; 
+  color: #333; 
 }
 
 
@@ -68,7 +68,7 @@
   gap: 20px;
 }
 
-/* Campos del formulario */
+
 .form-group {
   width: 100%;
 }
@@ -99,14 +99,14 @@
   min-height: 100px;
 }
 
-/* Campos obligatorios con asterisco */
+
 .form-group label[for*="*"]::after,
 .form-group label[required]::after {
   content: " *";
   color: #d25a0f;
 }
 
-/* ================= BOTÓN ================= */
+
 .boton-container {
   text-align: center;
   margin-top: 10px;
@@ -129,19 +129,19 @@
   background-color: #b34c0d;
 }
 
-/* ================= TEXTO CONFIDENCIALIDAD ================= */
+
 .confidencialidad {
-  text-align: center;  /* centra el texto */
-  margin-top: 15px;    /* espacio sobre el párrafo */
+  text-align: center;  
+  margin-top: 15px;    
   font-size: 14px;
   line-height: 1.5;
   color: #010101;
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media (max-width: 992px) {
   .fila-formulario-imagen {
-    flex-direction: column; /* formulario arriba, imagen debajo */
+    flex-direction: column; 
     gap: 20px;
   }
 

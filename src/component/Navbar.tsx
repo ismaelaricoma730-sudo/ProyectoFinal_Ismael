@@ -12,7 +12,6 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
    const toggleMenu = () => {
-    // Aquí va la lógica para abrir/cerrar el menú
     setMenuOpen(!menuOpen);
   };
   return (
@@ -21,9 +20,6 @@ const Navbar = () => {
   <ThemeSwitcher />
   <LanguageSwitcher />
 </div>
-
-
-      {/* ==== BARRA SUPERIOR ==== */}
       <div className="barra">
         <div className="iconos">
           <img src="img/correo.jpg" alt=""/>
@@ -34,10 +30,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ==== HEADER ==== */}
       <header>
         <div className="header-content">
-           {/* Buscador */}
           <div className="search-container">
             <input type="text" placeholder="⌕ Buscar..." />
           </div>
@@ -53,7 +47,6 @@ const Navbar = () => {
 
         </div>
 
-        {/* ==== MENÚ ==== */}
         <nav>
           <a className="activo" href="/">Inicio</a>
           <div className={`menu-derecha ${menuOpen ? "active" : ""}`}>

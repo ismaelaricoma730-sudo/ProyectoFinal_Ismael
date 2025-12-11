@@ -13,18 +13,10 @@ const Inicio = () => {
  
   return (
     <div>
-      
-
-      
-
-      {/* ==== BANNER ==== */}
       <div className="banner">
         <Banner />
-
-       
       </div>
 
-      {/* ==== CATEGORÍAS ==== */}
       <div className="categorias">
         <div><CategoriaCard img="img/productos3_6538.jpg" texto="Categoria 1" /><p>CONSUMIBLES</p></div>
         <div><CategoriaCard img="img/productos3_6538.jpg" texto="Categoria 2" /><p>HERRAMIENTAS ELÉCTRICAS</p></div>
@@ -37,7 +29,6 @@ const Inicio = () => {
         <div><CategoriaCard img="img/productos3_6255.jpg" texto="Categoria 9" /><p>AUTOMOTRIZ</p></div>
       </div>
 
-      {/* ==== NUEVOS PRODUCTOS ==== */}
       <div className="nuevos-productos">
         <h2>Nuevos Productos</h2>
 
@@ -71,7 +62,6 @@ const Inicio = () => {
         </div>
       </div>
 
-      {/* ==== RECOMENDADOS ==== */}
       <div className="recomendados">
         <h2>☰Recomendados</h2>
         <div className="recomendados-grid">
@@ -105,7 +95,6 @@ const Inicio = () => {
         </div>
       </div>
 
-      {/* ==== MARCA ==== */}
       <div className="marca-section">
         <h2 className="marca-titulo">HERRAMIENTAS MANUALES, ELÉCTRICAS A BATERÍA, COMBUSTIÓN</h2>
 
