@@ -1,4 +1,4 @@
-/* Cumple incisos: b, c, e */
+
 import React from "react";
 import Navbar from "./component/Navbar";
 import AppRouter from "./router/AppRouter";
