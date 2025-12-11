@@ -1,0 +1,57 @@
+body.light {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: #222;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.banner .slider {
+  width: 100%;
+  display: flex;
+  animation: slide 9s infinite;
+}
+
+.banner img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+}
+

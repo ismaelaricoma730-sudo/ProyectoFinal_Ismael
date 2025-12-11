@@ -1,0 +1,129 @@
+
+/* Contenedor principales productos destacados */
+.pagina-destacados {
+  padding: 20px;
+}
+
+
+/* Contenedor principal de destacados */
+.destacados-contenedor {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; /* Alinea la parte superior de la imagen y productos */
+  flex-wrap: wrap;
+}
+.pagina-destacados h2 {background-color:#ec8954;color:white;text-align:center;}
+
+
+
+/* Productos a la derecha de la imagen grande */
+.productos-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1; /* Ocupa el espacio restante junto a la imagen */
+}
+
+/* Filtros */
+.destacados-filtros {
+  margin-bottom: 20px;
+}
+
+.destacados-ordenar select {
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Grid de productos */
+.grid-destacados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Alinea productos a la izquierda dentro del contenedor */
+}
+
+.producto-destacado-item {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 250px !important; /* Ajustado para caber al lado de la imagen */
+  box-sizing: border-box;
+  text-align: center;
+  position: relative; /* Para badges */
+}
+
+.producto-destacado-item img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.producto-titulo {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.producto-precio {
+  color: #d25a0f;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.producto-codigo {
+  font-size: 9px;
+  color: #777;
+}
+
+/* Badges */
+.destacado-badge {
+  background-color: #d25a0f;
+  color: white;
+  padding: 2px 8px;
+  font-size: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+}
+
+.nuevo-badge {
+  background-color: #0d8fcd;
+  color: white;
+  padding: 2px 8px;
+  font-size: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .destacados-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos-seccion, .imagen-destacados {
+    flex: 1 1 100%;
+  }
+
+  .titulo-destacados {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-destacados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-destacado-item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,136 @@
+.light {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d70000;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* RESPONSIVE */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+        display: flex;
+        background: black;          /* ← AQUÍ CAMBIAS EL FONDO */
+        color: white;               /* ← COLOR DEL ICONO */
+        border-radius: 50%;         /* ← CÍRCULO */
+        width: 50px;
+        height: 50px;               /* ← IMPORTANTE */
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;    /* borde del círculo */
+        font-size: 28px;
+    }
+    .search-container {
+        position: relative;
+        width: 100%;
+    }
+
+@media (max-width: 700px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #d70000;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  
+  
+}
+
+
+.search-container {
+            order: 2;
+            width: 100%;
+            position: relative;
+            background: #f6a700;
+            padding: 0;
+        }
+        .hamburger-btn {
+             display: flex;
+        background: rgb(108, 36, 36); /* COLOR QUE QUIERES */
+        color: white;                 /* Icono blanco */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;                 /* MUY IMPORTANTE */
+        font-size: 28px;
+        border: 2px solid #fff;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .hamburger-btn:hover {
+            background: #adf200;
+        }
+         /* Ocultar menú normal en móvil */
+        .menu-derecha {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100%;
+            background: #222;
+            flex-direction: column;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        
+
+
+
+}

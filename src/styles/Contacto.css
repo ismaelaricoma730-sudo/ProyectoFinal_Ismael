@@ -1,0 +1,167 @@
+/* ================= COLUMNA IZQUIERDA: TODO el contenido ================= */
+.contenido-izquierdo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= TÍTULO ================= */
+.contenido-izquierdo h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ================= TEXTO INTRODUCTORIO ================= */
+.texto-intro {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #666;
+  font-size: 16px;
+}
+
+/* ================= FILA FORMULARIO + IMAGEN ================= */
+.fila-formulario-imagen {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; /* alinea la parte superior del formulario e imagen */
+  margin-bottom: 30px;
+}
+
+/* ================= IMAGEN DERECHA ================= */
+.imagen-derecha {
+  flex-shrink: 0; /* que no se reduzca */
+  max-width: 300px; /* ajusta según el diseño */
+}
+
+.imagen-derecha img {
+  width: 320px;
+  height: 550px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ================= FORMULARIO ================= */
+.formulario-contacto {
+  flex: 1;
+}
+.titulo-form {
+  text-align: center; /* centra el contenido */
+  font-size: 20px; /* tamaño del título */
+  font-weight: bold;
+  margin-bottom: 20px; /* separa del primer campo del formulario */
+  color: #333; /* color del título */
+}
+
+
+.columnas-formulario {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.columna-derecha,
+.columna-izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Campos del formulario */
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.form-group textarea {
+  height: 180px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Campos obligatorios con asterisco */
+.form-group label[for*="*"]::after,
+.form-group label[required]::after {
+  content: " *";
+  color: #d25a0f;
+}
+
+/* ================= BOTÓN ================= */
+.boton-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.boton-enviar {
+  padding: 14px 70px;
+  background-color: #d25a0f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 200px;
+}
+
+.boton-enviar:hover {
+  background-color: #b34c0d;
+}
+
+/* ================= TEXTO CONFIDENCIALIDAD ================= */
+.confidencialidad {
+  text-align: center;  /* centra el texto */
+  margin-top: 15px;    /* espacio sobre el párrafo */
+  font-size: 14px;
+  line-height: 1.5;
+  color: #010101;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .fila-formulario-imagen {
+    flex-direction: column; /* formulario arriba, imagen debajo */
+    gap: 20px;
+  }
+
+  .imagen-derecha {
+    max-width: 100%;
+  }
+
+  .columnas-formulario {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pagina-contacto {
+    padding: 20px 15px;
+  }
+
+  .boton-enviar {
+    width: 100%;
+    padding: 15px;
+  }
+}
