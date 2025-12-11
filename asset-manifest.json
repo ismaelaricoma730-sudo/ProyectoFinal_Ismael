@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ProyectoFinal_Ismael/static/css/main.2b1ddd72.css",
+    "main.js": "/ProyectoFinal_Ismael/static/js/main.880710d4.js",
+    "index.html": "/ProyectoFinal_Ismael/index.html",
+    "main.2b1ddd72.css.map": "/ProyectoFinal_Ismael/static/css/main.2b1ddd72.css.map",
+    "main.880710d4.js.map": "/ProyectoFinal_Ismael/static/js/main.880710d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b1ddd72.css",
+    "static/js/main.880710d4.js"
+  ]
+}
